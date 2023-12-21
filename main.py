@@ -353,7 +353,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('action', type=str, help='train or test')
     parser.add_argument('--batch_size', type=int, default=1)
-    parser.add_argument('--learning_rate', type=int, default=0.0001)
+    parser.add_argument('--learning_rate', type=float, default=0.0001)
     parser.add_argument('--weight', type=str, help='the path of the mode weight file')
     parser.add_argument('--model', type=str, default="DecoupleUNet", help='choose a model')
     parser.add_argument('--in_ch', type=int, default=3, help='the channel number of input')
